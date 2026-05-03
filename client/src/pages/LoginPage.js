@@ -56,12 +56,12 @@ export default function LoginPage() {
 
             <div style={{ marginTop: 24, textAlign: 'center' }}>
               <div style={{ marginBottom: 16, padding: '12px', background: 'rgba(99,102,241,0.08)', borderRadius: 'var(--radius-sm)', fontSize: 12, color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                <strong style={{ color: 'var(--primary-light)' }}>Demo Credentials:</strong><br />
+                <strong style={{ color: 'var(--primary)' }}>Demo Credentials:</strong><br />
                 Admin: admin@grievance.com / admin123<br />
                 Manager: manager.public.works@grievance.com / manager123
               </div>
               <p style={{ fontSize: 14, color: 'var(--text-muted)' }}>
-                Don't have an account? <Link to="/register" style={{ color: 'var(--primary-light)', fontWeight: 600 }}>Register here</Link>
+                Don't have an account? <Link to="/register" style={{ color: 'var(--primary)', fontWeight: 600 }}>Register here</Link>
               </p>
             </div>
           </div>

@@ -34,7 +34,7 @@ export default function ComplaintDetail() {
           {/* Header */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 12, marginBottom: 24 }}>
             <div>
-              <code style={{ fontSize: 13, color: 'var(--primary-light)', fontWeight: 700, letterSpacing: 1 }}>{complaint.ticketId}</code>
+              <code style={{ fontSize: 13, color: 'var(--primary)', fontWeight: 700, letterSpacing: 1 }}>{complaint.ticketId}</code>
               <h1 style={{ fontSize: 22, fontWeight: 800, marginTop: 6 }}>{complaint.title}</h1>
             </div>
             <StatusBadge status={complaint.status} />

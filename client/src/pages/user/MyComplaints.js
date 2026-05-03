@@ -117,7 +117,7 @@ export default function MyComplaints() {
                   {complaints.map((c) => (
                     <tr key={c._id}>
                       <td>
-                        <code style={{ color: 'var(--primary-light)', fontSize: 12, letterSpacing: 0.5 }}>{c.ticketId}</code>
+                        <code style={{ color: 'var(--primary)', fontSize: 12, letterSpacing: 0.5 }}>{c.ticketId}</code>
                       </td>
                       <td style={{ fontWeight: 500, maxWidth: 200 }}>
                         <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{c.title}</div>

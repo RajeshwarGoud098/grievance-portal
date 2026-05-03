@@ -58,7 +58,7 @@ export default function TrackPage() {
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 12, marginBottom: 20 }}>
                 <div>
                   <div style={{ fontSize: 12, color: 'var(--text-subtle)', marginBottom: 4, fontWeight: 700, textTransform: 'uppercase' }}>Ticket ID</div>
-                  <div style={{ fontSize: 22, fontWeight: 800, color: 'var(--primary-light)', letterSpacing: 1 }}>{complaint.ticketId}</div>
+                  <div style={{ fontSize: 22, fontWeight: 800, color: 'var(--primary)', letterSpacing: 1 }}>{complaint.ticketId}</div>
                 </div>
                 <StatusBadge status={complaint.status} />
               </div>

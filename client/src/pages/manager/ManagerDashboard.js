@@ -117,7 +117,7 @@ export default function ManagerDashboard() {
                   <tbody>
                     {recent.map((c) => (
                       <tr key={c._id}>
-                        <td><code style={{ color: 'var(--primary-light)', fontSize: 12 }}>{c.ticketId}</code></td>
+                        <td><code style={{ color: 'var(--primary)', fontSize: 12 }}>{c.ticketId}</code></td>
                         <td style={{ fontWeight: 500 }}>{c.title}</td>
                         <td>{c.department?.icon} {c.department?.name}</td>
                         <td style={{ fontSize: 13, color: 'var(--text-muted)' }}>{c.submittedBy?.name}</td>

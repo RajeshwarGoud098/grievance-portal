@@ -101,7 +101,7 @@ export default function UserDashboard() {
               <tbody>
                 {complaints.slice(0, 5).map((c) => (
                   <tr key={c._id}>
-                    <td><code style={{ color: 'var(--primary-light)', fontSize: 12 }}>{c.ticketId}</code></td>
+                    <td><code style={{ color: 'var(--primary)', fontSize: 12 }}>{c.ticketId}</code></td>
                     <td style={{ fontWeight: 500 }}>{c.title}</td>
                     <td>{c.department?.icon} {c.department?.name}</td>
                     <td><StatusBadge status={c.status} /></td>

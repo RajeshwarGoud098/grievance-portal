@@ -119,7 +119,7 @@ export default function DepartmentComplaints() {
                   {complaints.map((c) => (
                     <tr key={c._id} style={{ background: c.isOverdue ? 'rgba(239,68,68,0.04)' : 'transparent' }}>
                       <td>
-                        <code style={{ color: 'var(--primary-light)', fontSize: 12, letterSpacing: 0.5 }}>{c.ticketId}</code>
+                        <code style={{ color: 'var(--primary)', fontSize: 12, letterSpacing: 0.5 }}>{c.ticketId}</code>
                         {c.isOverdue && (
                           <div style={{ fontSize: 10, color: '#fca5a5', fontWeight: 700, textTransform: 'uppercase', marginTop: 2 }}>⚠ Overdue</div>
                         )}

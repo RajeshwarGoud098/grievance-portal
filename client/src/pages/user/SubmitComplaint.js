@@ -44,7 +44,7 @@ export default function SubmitComplaint() {
               <p style={{ color: 'var(--text-muted)', marginBottom: 24 }}>Your complaint has been registered successfully. Use your Ticket ID to track the status.</p>
               <div style={{ background: 'rgba(99,102,241,0.12)', border: '1px solid rgba(99,102,241,0.3)', borderRadius: 12, padding: '20px', marginBottom: 24 }}>
                 <div style={{ fontSize: 13, color: 'var(--text-subtle)', marginBottom: 8, textTransform: 'uppercase', fontWeight: 700 }}>Your Ticket ID</div>
-                <div style={{ fontSize: 28, fontWeight: 800, color: 'var(--primary-light)', letterSpacing: 2 }}>{success.ticketId}</div>
+                <div style={{ fontSize: 28, fontWeight: 800, color: 'var(--primary)', letterSpacing: 2 }}>{success.ticketId}</div>
                 <p style={{ fontSize: 12, color: 'var(--text-subtle)', marginTop: 8 }}>Save this ID to track your complaint</p>
               </div>
               <div style={{ display: 'flex', gap: 12, justifyContent: 'center' }}>
