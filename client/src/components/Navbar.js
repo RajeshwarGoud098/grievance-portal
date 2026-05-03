@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Search, LogOut } from 'lucide-react';
+import { Search, LogOut, Moon, Sun } from 'lucide-react';
 
 export default function Navbar() {
   const { user, logout } = useAuth();
   const location = useLocation();
+  const [isDark, setIsDark] = useState(() => localStorage.getItem('theme') === 'dark');
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDark]);
+
+  const toggleTheme = () => setIsDark(!isDark);
 
   const isActive = (path) => location.pathname === path ? 'nav-link active' : 'nav-link';
 
@@ -26,6 +39,10 @@ export default function Navbar() {
             <Link to="/register" className="btn btn-primary btn-sm">Register</Link>
           </>
         )}
+
+        <button onClick={toggleTheme} className="btn btn-icon btn-secondary" style={{ marginLeft: 8 }} title="Toggle Theme">
+          {isDark ? <Sun size={16} /> : <Moon size={16} />}
+        </button>
 
         {user?.role === 'user' && (
           <>
