@@ -7,7 +7,7 @@
  */
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://grievance-portal-ur86.onrender.com/api'; // Live Render API
 
 const api = axios.create({ baseURL: BASE_URL });
 
